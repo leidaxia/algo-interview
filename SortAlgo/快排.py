@@ -21,11 +21,11 @@ def parition(arr, left, right):
     while left < right:
         while left < right and arr[right] >= arr[curr]:
             right -= 1
-        while left < right and arr[left] <= curr:
+        while left < right and arr[left] <= arr[curr]:
             left += 1
 
         arr[left], arr[right] = arr[right], arr[left]
-    arr[left], arr[right] = arr[right], arr[left]
+    arr[left], arr[curr] = arr[curr], arr[left]
     return left
 
 

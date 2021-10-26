@@ -10,6 +10,7 @@
 # 时间复杂度 O(N^2)
 # 空间复杂度 O(1)
 
+
 def InsertSort(arr):
     n = len(arr)
     if n<=1:
